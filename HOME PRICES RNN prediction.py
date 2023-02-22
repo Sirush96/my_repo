@@ -196,7 +196,6 @@ true_predictions = scaler.inverse_transform(np.array(preds).reshape(-1, 1))
 
 # PLOT THE RESULT
 # Set a data range for the predicted data.
-# Remember that the stop date has to be later than the last predicted value.
 x = np.arange('2021-12-01', '2022-12-01', dtype='datetime64[M]').astype('datetime64[D]')
 
 plt.figure(figsize=(12,4))
